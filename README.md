@@ -1,50 +1,51 @@
-# Configuración del Entorno de Desarrollo para JavaScript y Jest
+# Configuració de l'Entorn de Desenvolupament per JavaScript i Jest
 
-## Paso 1: Instalación de Node.js
+## Pas 1: Instal·lació de Node.js
 
-Antes de comenzar, asegúrate de tener Node.js instalado en tu sistema. Jest se ejecuta en un entorno de Node.js.
+Abans de començar assegurat de tenir Node.js instal·lat al teu sistema. Jest s'execturaà en un entorn Node.js.
 
 ### Windows y Linux
 
-1. Descarga Node.js desde [Node.js official website](https://nodejs.org/).
-2. Sigue las instrucciones de instalación.
+1. Descarrega Node.js des de [Node.js official website](https://nodejs.org/).
+2. Segueix les instruccions d'instal·lació.
 
-Para verificar la instalación, abre tu terminal y ejecuta:
+Per verificar la instal·lació executa:
 
 ```bash
 node --version
 npm --version
 ```
 
-Estos comandos deben mostrar las versiones de Node.js y npm (el gestor de paquetes de Node.js), respectivamente.
+Aquests comandaments han de mostrar les versions de Node.js i npm (el gestor de paquets de Node.js), respectivament.
 
-## Paso 2: Configuración del Proyecto
+## Pas 2: Configuració del Projecte
 
-Crea una nueva carpeta para tu proyecto y navega a ella en tu terminal.
+Crea una nova carpeta per al teu projecte i navega-hi des del terminal.
+
 
 ```bash
 mkdir mi-proyecto-jest
 cd mi-proyecto-jest
 ```
-Inicializa un nuevo proyecto de Node.js:
+Inicialitza un nou projecte de Node.js:
 
 ```bash
 npm init -y
 ```
 
-Esto creará un archivo package.json en tu proyecto.
+Això crearà un fitxer package.json al teu projecte.
 
-## Paso 3: Instalación de Jest
+## Pas 3: Instal·lació de Jest
 
-Instala Jest utilizando npm:
+Instal·la Jest utilitzant npm:
 
 ```bash
 npm install --save-dev jest
 ```
 
-## Paso 4: Configuración de Jest
+## Pas 4: Configuració de Jest
 
-Edita tu archivo __package.json__ para agregar un script de prueba que use Jest. Debe verse así:
+Edita el fitxer package.json per afegir un script de proves que utilitzi Jest. Ha de quedar així:
 
 ```json
 {
@@ -54,9 +55,9 @@ Edita tu archivo __package.json__ para agregar un script de prueba que use Jest.
 }
 ```
 
-## Paso 5: Creación de Archivos de Pruebas
+## Pas 5: Creació d'Arxius de Proves
 
-Crea archivos para tu código y pruebas. Por ejemplo, para el ejercicio 1:
+Crea fitxers per al teu codi i les proves. Per exemple, per a l'exercici 1:
 
 suma.js
 
@@ -78,15 +79,15 @@ test('suma 1 + 2 es igual a 3', () => {
 });
 ```
 
-Repite este proceso para los demás ejercicios.
+Repeteix aquest procés per als altres exercicis.
 
-## Paso 6: Ejecutar las Pruebas
+## Pas 6: Executar les proves
 
-Para ejecutar tus pruebas, utiliza el siguiente comando en la terminal:
+Per executar les teves proves, utilitza el següent comandament al terminal:
 
 ```bash
 npm test
 ```
 
 
-Jest buscará automáticamente archivos con extensiones __.test.js__ o __.spec.js__ y ejecutará las pruebas contenidas en ellos.
+Jest buscarà automàticament arxius amb extensions __.test.js__ o __.spec.js__ y executarà les proves.
